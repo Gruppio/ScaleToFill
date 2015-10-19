@@ -1,6 +1,6 @@
 <?php
 
-include_once './ScaleToFillImageEditor.php';
+include_once './ScaleToFill.php';
 
 $width      = 600;
 $height     = 350;
