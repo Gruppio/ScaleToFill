@@ -6,13 +6,15 @@ For resize an existing image to a size of 600 x 350 you just need to write:
 
 ```
 <?php
-	include_once './ScaleToFillImageEditor.php';
+	include_once './ScaleToFill.php';
 
 	$width      = 600;
 	$height     = 350;
 	$image      = imagecreatefromjpeg('./gruppio.jpg');
 	$resized    = scaleToFill($image, $width, $height);
 	imagejpeg($resized, "./out.jpg");
+    imagedestroy($image);
+    imagedestroy($resized);
 ?>
 
 ```
